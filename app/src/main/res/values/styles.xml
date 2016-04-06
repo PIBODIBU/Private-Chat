@@ -1,11 +1,94 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+
+        <item name="textAppearanceLargePopupMenu">@style/AppTheme.PopupMenu</item>
+        <item name="textAppearanceSmallPopupMenu">@style/AppTheme.PopupMenu</item>
     </style>
+
+    <style name="AppTheme.PopupMenu">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AppTheme.ToolBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorSecondary">@color/colorTextPrimary</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.MusicPlayer">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="AppTheme.SeekBar" parent="Base.Widget.AppCompat.SeekBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+    <style name="AppTheme.SeekBar.Accent" parent="Base.Widget.AppCompat.SeekBar">
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+    <style name="AppTheme.TextInputLayout" parent="TextAppearance.AppCompat">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+
+        <item name="android:textColorHint">@color/colorHint</item>
+        <item name="android:textColorHighlight">@color/colorPrimary</item>
+        <item name="android:textColorLink">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.TextInputLayout.EditText">
+        <item name="android:textSize">15sp</item>
+
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+
+        <item name="android:textColorLink">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.TextInputLayout.ErrorAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/md_red_500</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme.TextInputLayout.CounterAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme.TextInputLayout.CounterOverflowAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/md_red_500</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>
